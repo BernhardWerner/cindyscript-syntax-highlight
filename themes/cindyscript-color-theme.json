@@ -1,0 +1,66 @@
+{
+    "name": "CindyScript Dark Theme",
+    "type": "dark",
+    "colors": {
+      "editor.foreground": "#D4D4C4",
+      "editor.background": "#1a1c20"
+    },
+    "tokenColors": [
+      {
+        "scope": "hash.cindyscript",
+        "settings": {
+          "foreground": "#df6da2"
+        }
+      },
+      {
+        "scope": "builtins.cindyscript",
+        "settings": {
+          "foreground": "#df6da2"
+        }
+      },
+      // {
+      //   "scope": "constant.numeric.cindyscript",
+      //   "settings": {
+      //     "foreground": "#9CDCFE"
+      //   }
+      // },
+      // {
+      //   "scope": "keyword.operator.arithmetic.cindyscript",
+      //   "settings": {
+      //     "foreground": "#9CDCFE"
+      //   }
+      // },
+      {
+        "scope": "keyword.operator.comparison.cindyscript",
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "scope": "keyword.operator.assignment.cindyscript",
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "scope": "string.quoted.double.cindyscript",
+        "settings": {
+          "foreground": "#74bf7e"
+        }
+      },
+      {
+        "scope": "comment.block.cindyscript",
+        "settings": {
+          "foreground": "#ffffa4",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "comment.line.double-slash.cindyscript",
+        "settings": {
+          "foreground": "#ffffa4",
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  }

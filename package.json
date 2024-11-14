@@ -1,0 +1,55 @@
+{
+  "name": "cindyscript-syntax-highlight",
+  "displayName": "CindyScript Syntax Highlight",
+  "description": "Syntax highlight for the CindyScript programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "cindyscript-syntax-highlight.helloWorld",
+      "title": "Hello World"
+    }],
+    "languages": [
+      {
+        "id": "cindyscript",
+        "aliases": ["CindyScript", "cindyscript"],
+        "extensions": [".cjs"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cindyscript",
+        "scopeName": "source.cindyscript",
+        "path": "./syntaxes/cindyscript.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "CindyScript Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cindyscript-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "eslint": "^9.13.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
